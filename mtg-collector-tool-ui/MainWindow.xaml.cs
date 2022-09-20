@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using mtg_collector_tool_ui.ViewModel;
 
 namespace mtg_collector_tool_ui
 {
@@ -23,6 +24,9 @@ namespace mtg_collector_tool_ui
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
         }
+
+        public MainViewModel ViewModel => (MainViewModel)DataContext;
     }
 }
