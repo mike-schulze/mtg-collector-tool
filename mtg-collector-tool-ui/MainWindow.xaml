@@ -1,13 +1,15 @@
-﻿<Window x:Class="mtg_collector_tool_ui.MainWindow"
+﻿<mah:MetroWindow x:Class="mtg_collector_tool_ui.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
         xmlns:local="clr-namespace:mtg_collector_tool_ui"
         xmlns:viewmodel="clr-namespace:mtg_collector_tool_ui.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel, IsDesignTimeCreatable=True}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        ResizeMode="CanResizeWithGrip"
+        Title="Magic the Gathering Collection Tool" Height="450" Width="800">
     <Grid>
         <TextBlock Text="{Binding Name}" />
     </Grid>
-</Window>
+</mah:MetroWindow>
