@@ -10,6 +10,19 @@
         ResizeMode="CanResizeWithGrip"
         Title="Magic the Gathering Collection Tool" Height="450" Width="800">
     <Grid>
-        <TextBlock Text="{Binding Name}" />
+        <mah:MetroTabControl>
+            <mah:MetroTabItem Header="Cards">
+                <TextBlock Text="{Binding Name}" />
+            </mah:MetroTabItem>
+
+            <mah:MetroTabItem Header="Editions">
+            </mah:MetroTabItem>
+
+            <mah:MetroTabItem Header="Lands">
+            </mah:MetroTabItem>
+
+            <mah:MetroTabItem Header="Sealed">
+            </mah:MetroTabItem>
+        </mah:MetroTabControl>
     </Grid>
 </mah:MetroWindow>
